@@ -1,35 +1,44 @@
-// for resolving the absolute path to our project
-// necessary for webpack
-const path = require('path');
+var path = require("path");
+var HtmlWebpackPlugin = require("html-webpack-plugin");
+var webpack = require("webpack");
 
-module.exports = {
-    // where our app "starts"
-    entry: './src/index.js',
-    // where to put the transpiled javascript
-    output: {
-        path: path.resolve(__dirname, 'public'),
-        filename: 'main.js'
+var config = {
+    entry: {
+        index: "./app/index.js"
     },
-
-    // babel config
+    output: {
+        path: path.resolve(__dirname, "dist"),
+        filename: "[name]_bundle.js",
+        publicPath: "/"
+    },
     module: {
         rules: [
-            {
-                // anything file that ends with '.js'
-                test: /\.js$/,
-                // except those in "node_modules"
-                exclude: /node_modules/,
-                // transform with babel
-                use: {
-                    loader: 'babel-loader',
-                    options: {
-                        presets: ['env']
-                    }
-                }
-            }
+            {test: /\.(js)$/, use: "babel-loader"},
+            {test: /\.css$/, use: ["style-loader", "css-loader"]}
+
         ]
     },
+    devServer: {
+        historyApiFallback: true
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: "app/index.html"
+        })],
+    externals: {
+        "Config": JSON.stringify(require("./config.json"))
+    }
+}
 
-    // allows us to see how the transpiled js relates to the untranspiled js
-    devtool: 'source-map'
-};
+if(process.env.NODE_ENV === "production"){
+    config.plugins.push(
+        new webpack.DefinePlugin({
+            "process.env": {
+                "NODE_ENV": JSON.stringify(process.env.NODE_ENV)
+            }
+        }),
+        new webpack.optimize.UglifyJsPlugin()
+    );
+}
+
+module.exports = config;
