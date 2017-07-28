@@ -28,11 +28,13 @@
   "homepage": "https://github.com/fmendozaro/pray4me#readme",
   "dependencies": {
     "axios": "^0.16.2",
+    "file-loader": "^0.11.2",
     "prop-types": "^15.5.10",
     "query-string": "^5.0.0",
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-router-dom": "^4.1.2"
+    "react-router-dom": "^4.1.2",
+    "roboto-fontface": "^0.8.0"
   },
   "devDependencies": {
     "babel-core": "^6.25.0",

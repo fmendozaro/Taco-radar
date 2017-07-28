@@ -12,7 +12,7 @@ var Home = require("./Home");
 // Adding an example of a Stateless functional component
 function Welcome(props){
     return (
-        <h2>Welcome to Pray4Me {props.username}</h2>
+        <div>Welcome</div>
     )
 }
 

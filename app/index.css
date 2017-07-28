@@ -1,3 +1,4 @@
+
 /*body{*/
 	/*background: lightskyblue;*/
     /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
@@ -126,34 +127,34 @@
     /*align-items:center;*/
 /*}*/
 
-/*.button{*/
-    /*color: aliceblue;*/
-    /*background-color: black;*/
-    /*border: none;*/
-    /*font-size: 16px;*/
-    /*border-radius: 3px;*/
-    /*width: 250px;*/
-    /*text-align: center;*/
-    /*display: block;*/
-    /*padding: 7px 0;*/
-    /*margin: 10px auto;*/
-/*}*/
+.button{
+    color: aliceblue;
+    background-color: black;
+    border: none;
+    font-size: 16px;
+    border-radius: 3px;
+    width: 250px;
+    text-align: center;
+    display: block;
+    padding: 7px 0;
+    margin: 10px auto;
+}
 
 /*.results-info{*/
     /*text-align: left;*/
     /*padding: 0 0 0 160px;*/
 /*}*/
 
-/*#overlay{*/
-    /*position: absolute;*/
-    /*top: 0;*/
-    /*left: 0;*/
-    /*z-index: 999;*/
-    /*width: 100%;*/
-    /*height: 100vh;*/
-    /*background: rgba(7, 23, 37, 0.9);*/
-    /*color:white;*/
-    /*display: flex;*/
-    /*justify-content: center;*/
-    /*align-items: center;*/
-/*}*/
+#overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    width: 100%;
+    height: 100vh;
+    background: rgba(7, 23, 37, 0.9);
+    color:white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

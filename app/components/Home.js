@@ -5,9 +5,8 @@ class Home extends React.Component{
     render(){
         return(
             <div className="home-container">
-                <h1>Github Battle: compare with your friends</h1>
                 <Link className="button" to="/battle">
-                    Battle
+                    Calculate
                 </Link>
             </div>
         )

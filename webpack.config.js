@@ -15,7 +15,6 @@ var config = {
         rules: [
             {test: /\.(js)$/, use: "babel-loader"},
             {test: /\.css$/, use: ["style-loader", "css-loader"]}
-
         ]
     },
     devServer: {
@@ -27,7 +26,12 @@ var config = {
         })],
     externals: {
         "Config": JSON.stringify(require("./config.json"))
-    }
+    },
+    loader:
+        {
+            test: /\.(jpg|jpeg|png)$/,
+            loader: 'file?name=assets/[name].[ext]'
+        }
 }
 
 if(process.env.NODE_ENV === "production"){
