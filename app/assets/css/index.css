@@ -158,6 +158,12 @@
     align-items: center;
 }
 
+#logo{
+    width: 70px;
+    height: 50px;
+    vertical-align: middle;
+}
+
 .bg-green-flag {
     background-color: #006847;
 }

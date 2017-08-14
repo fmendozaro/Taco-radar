@@ -9,8 +9,6 @@ var Route = ReactRouter.Route;
 var Nav = require("./Nav");
 var Home = require("./Home");
 var Footer = require("./Footer");
-// import {MaterializeUtils} from './Custom.js';
-
 
 class App extends React.Component{
     render(){
