@@ -3,10 +3,10 @@ var NavLink = require("react-router-dom").NavLink;
 
 function Nav(){
     return(
-        <nav className="nav-extended blue-darken-2">
-            <div className="nav-background">
-                <div className="ea k blue"
-                     style={{ backgroundImage: 'url(//cdn.shopify.com/s/files/1/1775/8583/t/1/assets/icon-seamless.png?3602604866228935180)'
+        <nav className="nav-extended">
+            <div className="nav-background red darken-3">
+                <div className="ea k"
+                     style={{ backgroundImage: 'url(//scdn.shopify.com/s/files/1/1775/8583/t/1/assets/icon-seamless.png?3602604866228935180)'
                 }}></div>
             </div>
             <div className="nav-wrapper db">
@@ -20,7 +20,12 @@ function Nav(){
                     </li>
                     <li>
                         <NavLink exact activeClassName="active" to="/" >
-                            Calculate prays
+                            Top 10 Taco places
+                        </NavLink>
+                    </li>
+                    <li>
+                        <NavLink exact activeClassName="active" to="/" >
+                            Nearest Mex-Mex Taco
                         </NavLink>
                     </li>
                     <li>
@@ -31,8 +36,9 @@ function Nav(){
                 </ul>
 
                 <div className="nav-header de">
-                    <h1>Title</h1>
-                    <div className="ge">Welcome this is an automatic way to calculate how many prayers you have to make in order to reach forgiveness</div>
+                    <h1>Taco Radar</h1>
+                    <h3>It's not Tex-Mex it's Mex-Mex</h3>
+                    <p className="ge">Welcome to the Taco Radar a place where you can find the nearest and finest real mexican flavored tacos in San Antonio, Texas. If you ever wonder how a real taco taste like, you can give it a shot and see for yourself.</p>
                 </div>
             </div>
         </nav>
