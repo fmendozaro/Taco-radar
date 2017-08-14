@@ -16,19 +16,13 @@ class App extends React.Component{
             <Router>
                 <div id="router-wrap">
                     <Nav/>
-                    <div className="container-fluid">
-                        <div className="row">
-                            <div className="col l12 m12 s12">
-                                <Switch>
-                                    <Route exact path="/" component={Home} />
-                                    {/* Error message */}
-                                    <Route render={function (){
-                                        return <p>Not Found</p>
-                                    }} />
-                                </Switch>
-                            </div>
-                        </div>
-                    </div>
+                        <Switch>
+                            <Route exact path="/" component={Home} />
+                            {/* Error message */}
+                            <Route render={function (){
+                                return <p>Not Found</p>
+                            }} />
+                        </Switch>
                     <Footer />
                 </div>
             </Router>

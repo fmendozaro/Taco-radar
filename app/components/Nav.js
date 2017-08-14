@@ -20,12 +20,12 @@ function Nav(){
                         </li>
                         <li>
                             <NavLink exact to="/" >
-                                Top 10 Taco places
+                                Nearest Mex-Mex Taco
                             </NavLink>
                         </li>
                         <li>
                             <NavLink exact to="/" >
-                                Nearest Mex-Mex Taco
+                                Top 10 Taco places
                             </NavLink>
                         </li>
                         <li>
