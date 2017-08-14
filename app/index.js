@@ -1,5 +1,5 @@
-require('./index.css');
-require('./utils/pacman.css');
+require('./assets/css/index.css');
+require('./assets/css/pacman.css');
 
 var React = require('react');
 var ReactDom = require('react-dom');
