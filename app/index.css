@@ -1,133 +1,132 @@
-
 /*body{*/
-	/*background: lightskyblue;*/
-    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+/*background: lightskyblue;*/
+/*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 /*}*/
 
 /*.container{*/
-	/*max-width: 1200px;*/
-	/*margin: 0 auto;*/
+/*max-width: 1200px;*/
+/*margin: 0 auto;*/
 /*}*/
 
 /*.row{*/
-    /*display: flex;*/
-    /*justify-content: space-around;*/
+/*display: flex;*/
+/*justify-content: space-around;*/
 /*}*/
 
 /*.column{*/
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*width: 500px;*/
-    /*align-items: center;*/
+/*display: flex;*/
+/*flex-direction: column;*/
+/*width: 500px;*/
+/*align-items: center;*/
 /*}*/
 
 /*.column input{*/
-    /*border-radius: 3px;*/
-    /*margin: 10px 0;*/
-    /*padding: 5px;*/
-    /*border: 1px solid black;*/
-    /*font-size: 16px;*/
-    /*width: 80%;*/
+/*border-radius: 3px;*/
+/*margin: 10px 0;*/
+/*padding: 5px;*/
+/*border: 1px solid black;*/
+/*font-size: 16px;*/
+/*width: 80%;*/
 /*}*/
 
 /*.column label{*/
-    /*text-align: center;*/
-    /*font-size: 30px;*/
-    /*font-weight: bold;*/
+/*text-align: center;*/
+/*font-size: 30px;*/
+/*font-weight: bold;*/
 /*}*/
 
 /*.header{*/
-    /*text-align: center;*/
-    /*font-size: 30px;*/
-    /*font-weight: bold;*/
+/*text-align: center;*/
+/*font-size: 30px;*/
+/*font-weight: bold;*/
 /*}*/
 
 /*!* Popular page *!*/
 
 /*ul{*/
-    /*padding: 0;*/
+/*padding: 0;*/
 /*}*/
 
 /*li{*/
-    /*list-style-type: none;*/
+/*list-style-type: none;*/
 /*}*/
 
 /*a{*/
-    /*text-decoration: none;*/
-    /*color: navy;*/
+/*text-decoration: none;*/
+/*color: navy;*/
 /*}*/
 
 /*.languages{*/
-    /*display: flex;*/
-    /*justify-content: center;*/
+/*display: flex;*/
+/*justify-content: center;*/
 /*}*/
 
 /*.languages li{*/
-    /*margin: 10px;*/
-    /*font-weight: bold;*/
-    /*font-size: 20px;*/
-    /*cursor: pointer;*/
-    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+/*margin: 10px;*/
+/*font-weight: bold;*/
+/*font-size: 20px;*/
+/*cursor: pointer;*/
+/*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
 /*}*/
 
 /*.popular-list{*/
-    /*display: flex;*/
-    /*flex-wrap: wrap;*/
-    /*justify-content: space-around;*/
+/*display: flex;*/
+/*flex-wrap: wrap;*/
+/*justify-content: space-around;*/
 /*}*/
 
 /*.popular-item{*/
-    /*margin:20px;*/
-    /*text-align: center;*/
+/*margin:20px;*/
+/*text-align: center;*/
 /*}*/
 
 /*.space-list-items{*/
-    /*margin-bottom: 7px;*/
+/*margin-bottom: 7px;*/
 /*}*/
 
 /*.avatar{*/
-    /*width: 150px;*/
-    /*border-radius: 50%;*/
+/*width: 150px;*/
+/*border-radius: 50%;*/
 /*}*/
 
 /*.popular-rank{*/
-    /*font-size: 20px;*/
-    /*margin: 10px;*/
+/*font-size: 20px;*/
+/*margin: 10px;*/
 /*}*/
 
 /*.nav{*/
-    /*display: flex;*/
+/*display: flex;*/
 /*}*/
 
 /*.active{*/
-    /*font-weight: bold;*/
+/*font-weight: bold;*/
 /*}*/
 
 /*.reset{*/
-    /*border: none;*/
-    /*background: transparent;*/
-    /*color: #d0021b;*/
-    /*display: block;*/
-    /*width: 100%;*/
-    /*text-align: center;*/
+/*border: none;*/
+/*background: transparent;*/
+/*color: #d0021b;*/
+/*display: block;*/
+/*width: 100%;*/
+/*text-align: center;*/
 /*}*/
 
 /*.reset:hover{*/
-    /*cursor: pointer;*/
+/*cursor: pointer;*/
 /*}*/
 
 /*.nav li{*/
-    /*margin-right: 15px;*/
-    /*font-size: 25px;*/
+/*margin-right: 15px;*/
+/*font-size: 25px;*/
 /*}*/
 
 /*.home-container{*/
-    /*display: flex;*/
-    /*flex-direction: column;*/
-    /*align-items:center;*/
+/*display: flex;*/
+/*flex-direction: column;*/
+/*align-items:center;*/
 /*}*/
 
-.button{
+.button {
     color: aliceblue;
     background-color: black;
     border: none;
@@ -141,11 +140,11 @@
 }
 
 /*.results-info{*/
-    /*text-align: left;*/
-    /*padding: 0 0 0 160px;*/
+/*text-align: left;*/
+/*padding: 0 0 0 160px;*/
 /*}*/
 
-#overlay{
+#overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -153,8 +152,16 @@
     width: 100%;
     height: 100vh;
     background: rgba(7, 23, 37, 0.9);
-    color:white;
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.bg-green-flag {
+    background-color: #006847;
+}
+
+.bg-red-flag {
+    background-color: #CE1126;
 }
