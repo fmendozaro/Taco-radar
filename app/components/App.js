@@ -8,28 +8,17 @@ var Router = ReactRouter.BrowserRouter;
 var Route = ReactRouter.Route;
 var Nav = require("./Nav");
 var Home = require("./Home");
-
-// Adding an example of a Stateless functional component
-function Welcome(props){
-    return (
-        <div>Welcome</div>
-    )
-}
-
-Welcome.defaultProps = {
-    username: ""
-}
+var Footer = require("./Footer");
 
 class App extends React.Component{
     render(){
         return (
             <Router>
                 <div id="router-wrap">
-                    <Nav />
-                    <div className="container">
+                    <Nav/>
+                    <div className="container-fluid">
                         <div className="row">
                             <div className="col l12 m12 s12">
-                                <Welcome />
                                 <Switch>
                                     <Route exact path="/" component={Home} />
                                     {/* Error message */}
@@ -40,6 +29,7 @@ class App extends React.Component{
                             </div>
                         </div>
                     </div>
+                    <Footer />
                 </div>
             </Router>
         )
