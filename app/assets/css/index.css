@@ -178,6 +178,23 @@
     height: 100%;
 }
 
+#nearest {
+    position: relative;
+}
+
+#radar {
+    position: absolute;
+    width: 40px;
+    height: auto;
+    filter: brightness(0) invert(1);
+    top: 11px;
+    left: 8px;
+}
+
+#radar + span{
+    margin-left: 50px;
+}
+
 .content{
     min-height: 69vh;
 }

@@ -1,6 +1,7 @@
 var React = require("react");
 var NavLink = require("react-router-dom").NavLink;
 import logo from "../assets/images/taco-icon.png";
+import radar from "../assets/images/radar.png";
 
 function Nav(){
     return(
@@ -19,25 +20,26 @@ function Nav(){
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink exact to="/findtaco">
-                                Nearest Mex-Mex Taco
+                            <NavLink id="nearest" exact to="/findtaco">
+                                <img id="radar" src={radar}/>
+                                <span>Nearest Taco</span>
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink exact to="/toprated">
-                                Top Taco places
-                            </NavLink>
-                        </li>
-                        <li>
-                            <NavLink exact to="/top-pozoles" >
-                                Top Pozole places
-                            </NavLink>
+                            <a className="dropdown-button" href="#!" data-activates="toprated">Top Places for:<i className="material-icons right">arrow_drop_down</i></a>
                         </li>
                         <li>
                             <NavLink exact to="/contact" >
                                 Contact
                             </NavLink>
                         </li>
+                    </ul>
+
+                    <ul id="toprated" className="dropdown-content">
+                        <li><NavLink to="/toprated">Tacos</NavLink></li>
+                        <li><NavLink to="/top-pozoles">Pozole</NavLink></li>
+                        <li className="divider"></li>
+                        <li><NavLink to="/top-general">Mexican food in General</NavLink></li>
                     </ul>
                 </div>
             </nav>
