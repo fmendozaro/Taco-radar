@@ -28,7 +28,6 @@
   "homepage": "https://github.com/fmendozaro/pray4me#readme",
   "dependencies": {
     "axios": "^0.16.2",
-    "file-loader": "^0.11.2",
     "prop-types": "^15.5.10",
     "query-string": "^5.0.0",
     "react": "^15.6.1",
@@ -42,7 +41,9 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "css-loader": "^0.28.4",
+    "file-loader": "^0.11.2",
     "html-webpack-plugin": "^2.29.0",
+    "image-webpack-loader": "^3.3.1",
     "style-loader": "^0.18.2",
     "webpack": "^3.4.1",
     "webpack-dev-server": "^2.6.1"

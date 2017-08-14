@@ -1,5 +1,7 @@
 var React = require("react");
 var Link = require("react-router-dom").Link;
+import pozoleImg from '../assets/images/pozole-header.jpg';
+import tacoImg from '../assets/images/taco-header.jpg';
 
 class Home extends React.Component{
     render(){
@@ -7,7 +9,7 @@ class Home extends React.Component{
             <div className="home-container">
                 <div className="parallax-container">
                     <div className="parallax">
-                        <img src="assets/images/taco-header.jpg" />
+                        <img src={tacoImg} />
                     </div>
                 </div>
 
@@ -21,7 +23,7 @@ class Home extends React.Component{
 
                 <div className="parallax-container">
                     <div className="parallax">
-                        <img src="assets/images/pozole-header.jpg"/>
+                        <img src={pozoleImg}/>
                     </div>
                 </div>
 
