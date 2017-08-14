@@ -1,14 +1,12 @@
 var React = require("react");
 var Link = require("react-router-dom").Link;
-import pozoleImg from '../assets/images/pozole-header.jpg';
 import tacoImg from '../assets/images/taco-header.jpg';
-import tacoImg2 from '../assets/images/taco-header-2.jpg';
 import tacoImg3 from '../assets/images/tacos-header-3.jpg';
 
 class Home extends React.Component{
     render(){
         return(
-            <div className="home-container">
+            <div>
                 <div className="parallax-container">
                     <div className="parallax">
                         <img src={tacoImg} />

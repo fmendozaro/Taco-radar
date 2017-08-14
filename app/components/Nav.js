@@ -4,7 +4,7 @@ import logo from "../assets/images/taco-icon.png";
 
 function Nav(){
     return(
-        <header>
+        <header className="navbar-fixed">
             <nav>
                 <div className="nav-wrapper bg-green-flag">
                     <a href="/" className="brand-logo">
@@ -19,22 +19,22 @@ function Nav(){
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink exact activeClassName="active" to="/" >
+                            <NavLink exact to="/" >
                                 Top 10 Taco places
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink exact activeClassName="active" to="/" >
+                            <NavLink exact to="/" >
                                 Nearest Mex-Mex Taco
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink exact activeClassName="active" to="/" >
+                            <NavLink exact to="/" >
                                 Best Pozole places
                             </NavLink>
                         </li>
                         <li>
-                            <NavLink exact activeClassName="active" to="/" >
+                            <NavLink exact to="/" >
                                 Contact
                             </NavLink>
                         </li>
