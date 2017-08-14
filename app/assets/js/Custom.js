@@ -5,14 +5,25 @@ $(document).ready(function(){
     $('.parallax').parallax();
     $('.tap-target').tapTarget('open');
 
+    // Geo Location
+    function getLocation() {
+        if (navigator.geolocation) {
+            navigator.geolocation.getCurrentPosition(initMap);
+        } else {
+            x.innerHTML = "Geolocation is not supported by this browser.";
+        }
+    }
+
+    getLocation();
+
     //maps
     var map;
     var service;
     var infowindow;
 
 
-    function initMap() {
-        var pyrmont = {lat: -33.867, lng: 151.195};
+    function initMap(position) {
+        var pyrmont = {lat: position.coords.latitude, lng: position.coords.longitude};
 
         map = new google.maps.Map(document.getElementById('map'), {
             center: pyrmont,
@@ -24,7 +35,7 @@ $(document).ready(function(){
         service.nearbySearch({
             location: pyrmont,
             radius: 500,
-            type: ['store']
+            type: ['food']
         }, callback);
     }
 

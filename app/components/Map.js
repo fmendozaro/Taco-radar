@@ -18,7 +18,7 @@ class Map extends React.Component{
                 </div>
                 <div className="row">
                     <div className="col s12 m12">
-                        <label htmlFor="map">Results:</label>
+                        <h5>Results:</h5>
                         <div id="map"></div>
                     </div>
                 </div>
