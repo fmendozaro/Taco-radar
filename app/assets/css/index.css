@@ -172,3 +172,12 @@
 .bg-red-flag {
     background-color: #CE1126;
 }
+
+/* Google map */
+#map {
+    height: 100%;
+}
+
+.content{
+    min-height: 69vh;
+}

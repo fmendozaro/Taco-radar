@@ -9,6 +9,8 @@ var Route = ReactRouter.Route;
 var Nav = require("./Nav");
 var Home = require("./Home");
 var Footer = require("./Footer");
+var Map = require("./Map");
+var TopRated = require("./TopRated");
 
 class App extends React.Component{
     render(){
@@ -18,6 +20,8 @@ class App extends React.Component{
                     <Nav/>
                         <Switch>
                             <Route exact path="/" component={Home} />
+                            <Route exact path="/findtaco" component={Map} />
+                            <Route exact path="/toprated" component={TopRated} />
                             {/* Error message */}
                             <Route render={function (){
                                 return <p>Not Found</p>
