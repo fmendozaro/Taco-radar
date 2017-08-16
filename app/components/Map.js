@@ -20,7 +20,7 @@ class Map extends React.Component{
 
     render(){
         return(
-            <main className="content container">
+            <main className="content container-fluid">
                 <div className="row">
                     <div className="col s8 offset-s2">
                         <form action="/search">
@@ -38,7 +38,7 @@ class Map extends React.Component{
                         <div id="map"></div>
                     </div>
                 </div>
-                {!this.state.gotLocation ? <Loading/> : <Map location={this.state.gotLocation} /> }
+                {/*{!this.state.gotLocation ? <Loading/> : null }*/}
             </main>
         );
     }

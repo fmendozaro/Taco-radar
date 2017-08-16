@@ -18,7 +18,6 @@ $(document).ready(function(){
     var infowindow;
 
     function initMap(position) {
-        $("#overlay").fadeIn;
         getLocation();
 
         var curLocation = {lat: position.coords.latitude, lng: position.coords.longitude};
@@ -31,14 +30,13 @@ $(document).ready(function(){
         infowindow = new google.maps.InfoWindow();
         var service = new google.maps.places.PlacesService(map);
         service.nearbySearch({
-            location: pyrmont,
+            location: curLocation,
             radius: 500,
             type: ['food']
         }, callback);
     }
 
     function callback(results, status) {
-        $("#overlay").fadeOut;
         if (status === google.maps.places.PlacesServiceStatus.OK) {
             for (var i = 0; i < results.length; i++) {
                 createMarker(results[i]);
