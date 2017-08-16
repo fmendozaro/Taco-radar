@@ -23,22 +23,22 @@ class Loading extends React.Component{
     }
 
     componentDidMount(){
-        var stopper = this.props.text + "...";
-        this.interval = window.setInterval(function(){
-            if(this.state.text === stopper){
-                this.setState(function () {
+         var stopper = this.props.text + "...";
+         this.interval = window.setInterval(function(){
+             if(this.state.text === stopper){
+                 this.setState(function () {
+                     return {
+                         text: this.props.text
+                     }
+                 });
+             } else {
+                 this.setState(function (previousState) {
                     return {
-                        text: this.props.text
-                    }
-                });
-            } else {
-                this.setState(function (previousState) {
-                   return {
-                       text: previousState.text + "."
+                         text: previousState.text
                    }
-                });
-            }
-        }.bind(this), this.props.speed);
+                 });
+             }
+         }.bind(this), this.props.speed);
     }
 
     componentWillUnmount(){
