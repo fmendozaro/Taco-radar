@@ -2,6 +2,7 @@ $(document).ready(function(){
 
     $('.parallax').parallax();
     $('.tap-target').tapTarget('open');
+    getLocation();
 
     // Geo Location
     function getLocation() {
@@ -18,13 +19,12 @@ $(document).ready(function(){
     var infowindow;
 
     function initMap(position) {
-        getLocation();
 
         var curLocation = {lat: position.coords.latitude, lng: position.coords.longitude};
 
         map = new google.maps.Map(document.getElementById('map'), {
             center: curLocation,
-            zoom: 18
+            zoom: 17
         });
 
         infowindow = new google.maps.InfoWindow();
