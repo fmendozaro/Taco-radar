@@ -1,5 +1,6 @@
 var React = require("react");
 var Loading = require("./Loading");
+import poweredGoogle from '../assets/images/powered_by_google_on_white_hdpi.png';
 
 class Map extends React.Component{
 
@@ -26,8 +27,9 @@ class Map extends React.Component{
                         <form action="/search">
                             <div className="input-field col s12">
                                 <i className="material-icons prefix">search</i>
-                                <input id="icon_prefix" type="text" className="validate" />
-                                    <label htmlFor="icon_prefix">Address, Zip Code</label>
+                                <input id="icon_prefix" type="text" className="validate" onFocus="geolocate()" />
+                                    <label htmlFor="icon_prefix">City, Address, Zip Code</label>
+                                <img className="powered-google right" src={poweredGoogle} alt=""/>
                             </div>
                         </form>
                     </div>

@@ -70,3 +70,8 @@
 .content{
     min-height: 69vh;
 }
+
+.powered-google {
+    width: 200px;
+    height: auto;
+}
