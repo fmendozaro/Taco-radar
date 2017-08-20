@@ -27,7 +27,7 @@ class Map extends React.Component{
                         <form action="/search">
                             <div className="input-field col s12">
                                 <i className="material-icons prefix">search</i>
-                                <input id="icon_prefix" type="text" className="validate" onFocus="geolocate()" />
+                                <input id="icon_prefix" type="text" className="validate" />
                                     <label htmlFor="icon_prefix">City, Address, Zip Code</label>
                                 <img className="powered-google right" src={poweredGoogle} alt=""/>
                             </div>
