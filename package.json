@@ -1,5 +1,5 @@
 {
-  "name": "pray4me",
+  "name": "taco-radar",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -12,7 +12,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+ssh://git@github.com/fmendozaro/pray4me.git"
+    "url": "git+ssh://git@github.com/fmendozaro/Taco-radar.git"
   },
   "author": "Fernando Mendoza",
   "license": "ISC",
@@ -23,9 +23,9 @@
     ]
   },
   "bugs": {
-    "url": "https://github.com/fmendozaro/pray4me/issues"
+    "url": "https://github.com/fmendozaro/Taco-radar/issues"
   },
-  "homepage": "https://github.com/fmendozaro/pray4me#readme",
+  "homepage": "https://github.com/fmendozaro/Taco-radar#readme",
   "dependencies": {
     "axios": "^0.16.2",
     "prop-types": "^15.5.10",
