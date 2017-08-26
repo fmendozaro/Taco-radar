@@ -4,7 +4,6 @@ $(document).ready(function(){
     $('.tap-target').tapTarget('open');
     getLocation();
     initAutocomplete();
-    initMap();
     var $autocomplete = $("#icon-prefix");
     $autocomplete.onfocus(geolocate());
 
@@ -120,7 +119,5 @@ $(document).ready(function(){
             });
         }
     }
-
-
 
 });
