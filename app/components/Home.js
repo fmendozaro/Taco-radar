@@ -18,6 +18,7 @@ class Home extends React.Component{
                         <h1 className="header">Taco Radar</h1>
                         <h3>It's not Tex-Mex it's Mex-Mex</h3>
                         <p>Welcome to the Taco Radar a place where you can find the nearest and finest real mexican flavored tacos in San Antonio, Texas. If you ever wonder how a real taco taste like, you can give it a shot and see for yourself.</p>
+                        <div className="g-signin2" data-onsuccess="onSignIn" id="google-sign">Sign in</div>
                     </div>
                 </div>
 
