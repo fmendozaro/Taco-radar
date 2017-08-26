@@ -4,19 +4,18 @@ $(document).ready(function(){
     $('.tap-target').tapTarget('open');
     getLocation();
     initAutocomplete();
-    var $autocomplete = $("#icon-prefix");
-    $autocomplete.onfocus(geolocate());
+    var $autocomplete = $("#icon_prefix");
 
     // Geo Location
     function getLocation() {
         if (navigator.geolocation) {
             navigator.geolocation.getCurrentPosition(initMap);
+            $autocomplete.onfocus(geolocate());
         } else {
             x.innerHTML = "Geolocation is not supported by this browser.";
         }
     }
 
-    //maps
     var map;
     var service;
     var infowindow;
